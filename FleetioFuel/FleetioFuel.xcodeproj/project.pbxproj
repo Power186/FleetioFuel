@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D215FC1E26AA16630028FA63 /* EntryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D215FC1D26AA16630028FA63 /* EntryDetailView.swift */; };
+		D215FC2026AA1A350028FA63 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D215FC1F26AA1A350028FA63 /* View+Extensions.swift */; };
+		D240598C26AAFE6800A9EE14 /* PullToRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = D240598B26AAFE6800A9EE14 /* PullToRefresh.swift */; };
+		D240598E26AAFE9400A9EE14 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D240598D26AAFE9400A9EE14 /* ActivityIndicator.swift */; };
+		D240599026AB1BEA00A9EE14 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D240598F26AB1BEA00A9EE14 /* CircularProgressView.swift */; };
+		D240599226AB209100A9EE14 /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D240599126AB209100A9EE14 /* Double+Extensions.swift */; };
+		D240599426AB4A3000A9EE14 /* MapAnnotationImageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D240599326AB4A3000A9EE14 /* MapAnnotationImageButton.swift */; };
+		D240599626AB568000A9EE14 /* DateFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D240599526AB568000A9EE14 /* DateFormat.swift */; };
+		D25220BA26A909F700604B2A /* FleetioFuelApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220B926A909F700604B2A /* FleetioFuelApp.swift */; };
+		D25220BC26A909F700604B2A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220BB26A909F700604B2A /* MainTabView.swift */; };
+		D25220BE26A909F800604B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25220BD26A909F800604B2A /* Assets.xcassets */; };
+		D25220C126A909F800604B2A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25220C026A909F800604B2A /* Preview Assets.xcassets */; };
+		D25220CA26A90AB000604B2A /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220C926A90AB000604B2A /* APIRequest.swift */; };
+		D25220CC26A90ADE00604B2A /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220CB26A90ADE00604B2A /* NetworkManager.swift */; };
+		D25220CF26A90B6000604B2A /* FuelEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220CE26A90B6000604B2A /* FuelEntry.swift */; };
+		D25220D126A90B8100604B2A /* GeoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220D026A90B8100604B2A /* GeoLocation.swift */; };
+		D25220D326A90BD200604B2A /* FuelEntry+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220D226A90BD200604B2A /* FuelEntry+Extensions.swift */; };
+		D25220D526A9138500604B2A /* GeoLocation+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220D426A9138500604B2A /* GeoLocation+Extensions.swift */; };
+		D25220D826A9140B00604B2A /* FuelEntryRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220D726A9140B00604B2A /* FuelEntryRequestManager.swift */; };
+		D25220DB26A9143B00604B2A /* FuelEntryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220DA26A9143B00604B2A /* FuelEntryViewModel.swift */; };
+		D25220DF26A9156C00604B2A /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220DE26A9156C00604B2A /* Alerts.swift */; };
+		D25220E126A9162300604B2A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220E026A9162300604B2A /* MapView.swift */; };
+		D25220E326A9162C00604B2A /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220E226A9162C00604B2A /* ListView.swift */; };
+		D25220E526A9DA6A00604B2A /* HapticsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220E426A9DA6A00604B2A /* HapticsManager.swift */; };
+		D25220E726A9DDC800604B2A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220E626A9DDC800604B2A /* HomeView.swift */; };
+		D25220E926A9E23100604B2A /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220E826A9E23100604B2A /* SettingsView.swift */; };
+		D25220EF26A9EF1D00604B2A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25220EE26A9EF1D00604B2A /* MessageView.swift */; };
+		D28F42A726ACA8C800E8D0DE /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F42A626ACA8C800E8D0DE /* String+Extensions.swift */; };
+		D28F42AF26ACBDC700E8D0DE /* FleetioFuelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F42AE26ACBDC700E8D0DE /* FleetioFuelTests.swift */; };
+		D28F42B726ACBEB400E8D0DE /* URLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F42B626ACBEB400E8D0DE /* URLTests.swift */; };
+		D28F42B926ACC13C00E8D0DE /* CodableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F42B826ACC13C00E8D0DE /* CodableTests.swift */; };
+		D28F42BD26ACC59100E8D0DE /* NetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F42BC26ACC59100E8D0DE /* NetworkTests.swift */; };
+		D28F42C126ACD46D00E8D0DE /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F42C026ACD46D00E8D0DE /* ScaledFont.swift */; };
+		D28F42C326ACE54D00E8D0DE /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D28F42C226ACE54D00E8D0DE /* AudioManager.swift */; };
+		D2A5D5A926AEF969000DB416 /* Publisher+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5D5A826AEF969000DB416 /* Publisher+Extensions.swift */; };
+		D2A5D5AB26AEF9AC000DB416 /* Notification+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5D5AA26AEF9AC000DB416 /* Notification+Extensions.swift */; };
+		D2C0068926ACF29B008C8987 /* carEngine.wav in Resources */ = {isa = PBXBuildFile; fileRef = D2C0068826ACF29A008C8987 /* carEngine.wav */; };
+		D2C0068B26ACF59A008C8987 /* ErrorMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C0068A26ACF59A008C8987 /* ErrorMessageView.swift */; };
+		D2C0068D26AD026F008C8987 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C0068C26AD026F008C8987 /* UIApplication+Extensions.swift */; };
+		D2C0068F26AD0607008C8987 /* CloudDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C0068E26AD0607008C8987 /* CloudDefaults.swift */; };
+		D2C0069126AD09C3008C8987 /* ShareSheetButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C0069026AD09C3008C8987 /* ShareSheetButton.swift */; };
+		D2C0069326AD0C89008C8987 /* Array+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C0069226AD0C89008C8987 /* Array+Extensions.swift */; };
+		D2C0069526AE00D6008C8987 /* AppStoreReviewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C0069426AE00D6008C8987 /* AppStoreReviewManager.swift */; };
+		D2C0069726AE0F4E008C8987 /* SettingsSelectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C0069626AE0F4E008C8987 /* SettingsSelectionButton.swift */; };
+		D2D67A3B26AFA96E00B93201 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D67A3A26AFA96E00B93201 /* CircleButton.swift */; };
+		D2FDBB9126AA59FA00A897FC /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDBB9026AA59FA00A897FC /* Constant.swift */; };
+		D2FDBB9326AA5F0200A897FC /* ListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDBB9226AA5F0200A897FC /* ListCellView.swift */; };
+		D2FDBB9726AA63B800A897FC /* MapRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDBB9626AA63B800A897FC /* MapRectangleView.swift */; };
+		D2FDBB9926AA671200A897FC /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDBB9826AA671200A897FC /* Location.swift */; };
+		D2FDBB9C26AA793800A897FC /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDBB9B26AA793800A897FC /* SearchBarView.swift */; };
+		D2FDBB9E26AA9C4D00A897FC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDBB9D26AA9C4D00A897FC /* SearchView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D28F42B126ACBDC700E8D0DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25220AE26A909F700604B2A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D25220B526A909F700604B2A;
+			remoteInfo = FleetioFuel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D215FC1D26AA16630028FA63 /* EntryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailView.swift; sourceTree = "<group>"; };
+		D215FC1F26AA1A350028FA63 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		D240598B26AAFE6800A9EE14 /* PullToRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefresh.swift; sourceTree = "<group>"; };
+		D240598D26AAFE9400A9EE14 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		D240598F26AB1BEA00A9EE14 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		D240599126AB209100A9EE14 /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		D240599326AB4A3000A9EE14 /* MapAnnotationImageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationImageButton.swift; sourceTree = "<group>"; };
+		D240599526AB568000A9EE14 /* DateFormat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormat.swift; sourceTree = "<group>"; };
+		D25220B626A909F700604B2A /* FleetioFuel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FleetioFuel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25220B926A909F700604B2A /* FleetioFuelApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetioFuelApp.swift; sourceTree = "<group>"; };
+		D25220BB26A909F700604B2A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		D25220BD26A909F800604B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D25220C026A909F800604B2A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D25220C226A909F800604B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25220C926A90AB000604B2A /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		D25220CB26A90ADE00604B2A /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D25220CE26A90B6000604B2A /* FuelEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEntry.swift; sourceTree = "<group>"; };
+		D25220D026A90B8100604B2A /* GeoLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocation.swift; sourceTree = "<group>"; };
+		D25220D226A90BD200604B2A /* FuelEntry+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FuelEntry+Extensions.swift"; sourceTree = "<group>"; };
+		D25220D426A9138500604B2A /* GeoLocation+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GeoLocation+Extensions.swift"; sourceTree = "<group>"; };
+		D25220D726A9140B00604B2A /* FuelEntryRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEntryRequestManager.swift; sourceTree = "<group>"; };
+		D25220DA26A9143B00604B2A /* FuelEntryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelEntryViewModel.swift; sourceTree = "<group>"; };
+		D25220DE26A9156C00604B2A /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		D25220E026A9162300604B2A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		D25220E226A9162C00604B2A /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		D25220E426A9DA6A00604B2A /* HapticsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticsManager.swift; sourceTree = "<group>"; };
+		D25220E626A9DDC800604B2A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		D25220E826A9E23100604B2A /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		D25220EE26A9EF1D00604B2A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		D28F42A626ACA8C800E8D0DE /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		D28F42AC26ACBDC700E8D0DE /* FleetioFuelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FleetioFuelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D28F42AE26ACBDC700E8D0DE /* FleetioFuelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FleetioFuelTests.swift; sourceTree = "<group>"; };
+		D28F42B026ACBDC700E8D0DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D28F42B626ACBEB400E8D0DE /* URLTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLTests.swift; sourceTree = "<group>"; };
+		D28F42B826ACC13C00E8D0DE /* CodableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableTests.swift; sourceTree = "<group>"; };
+		D28F42BC26ACC59100E8D0DE /* NetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTests.swift; sourceTree = "<group>"; };
+		D28F42C026ACD46D00E8D0DE /* ScaledFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
+		D28F42C226ACE54D00E8D0DE /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		D2A5D5A826AEF969000DB416 /* Publisher+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extensions.swift"; sourceTree = "<group>"; };
+		D2A5D5AA26AEF9AC000DB416 /* Notification+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Extensions.swift"; sourceTree = "<group>"; };
+		D2C0068826ACF29A008C8987 /* carEngine.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = carEngine.wav; path = ../../../carEngine.wav; sourceTree = "<group>"; };
+		D2C0068A26ACF59A008C8987 /* ErrorMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessageView.swift; sourceTree = "<group>"; };
+		D2C0068C26AD026F008C8987 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		D2C0068E26AD0607008C8987 /* CloudDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDefaults.swift; sourceTree = "<group>"; };
+		D2C0069026AD09C3008C8987 /* ShareSheetButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareSheetButton.swift; sourceTree = "<group>"; };
+		D2C0069226AD0C89008C8987 /* Array+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+Extensions.swift"; sourceTree = "<group>"; };
+		D2C0069426AE00D6008C8987 /* AppStoreReviewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreReviewManager.swift; sourceTree = "<group>"; };
+		D2C0069626AE0F4E008C8987 /* SettingsSelectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsSelectionButton.swift; sourceTree = "<group>"; };
+		D2D67A3A26AFA96E00B93201 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		D2FDBB9026AA59FA00A897FC /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D2FDBB9226AA5F0200A897FC /* ListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCellView.swift; sourceTree = "<group>"; };
+		D2FDBB9626AA63B800A897FC /* MapRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRectangleView.swift; sourceTree = "<group>"; };
+		D2FDBB9826AA671200A897FC /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		D2FDBB9B26AA793800A897FC /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		D2FDBB9D26AA9C4D00A897FC /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D25220B326A909F700604B2A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D28F42A926ACBDC700E8D0DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D25220AD26A909F700604B2A = {
+			isa = PBXGroup;
+			children = (
+				D25220B826A909F700604B2A /* FleetioFuel */,
+				D28F42AD26ACBDC700E8D0DE /* FleetioFuelTests */,
+				D25220B726A909F700604B2A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D25220B726A909F700604B2A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25220B626A909F700604B2A /* FleetioFuel.app */,
+				D28F42AC26ACBDC700E8D0DE /* FleetioFuelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D25220B826A909F700604B2A /* FleetioFuel */ = {
+			isa = PBXGroup;
+			children = (
+				D25220DD26A9155800604B2A /* Utils */,
+				D25220DC26A9146900604B2A /* Views */,
+				D25220D926A9142700604B2A /* ViewModels */,
+				D25220D626A913F800604B2A /* Managers */,
+				D25220CD26A90B4E00604B2A /* Models */,
+				D25220C826A90A9200604B2A /* Networking */,
+				D2FDBB8F26AA59E800A897FC /* Constants */,
+				D28F42C426ACE8AC00E8D0DE /* Resources */,
+				D25220B926A909F700604B2A /* FleetioFuelApp.swift */,
+				D25220BD26A909F800604B2A /* Assets.xcassets */,
+				D25220C226A909F800604B2A /* Info.plist */,
+				D25220BF26A909F800604B2A /* Preview Content */,
+			);
+			path = FleetioFuel;
+			sourceTree = "<group>";
+		};
+		D25220BF26A909F800604B2A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D25220C026A909F800604B2A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D25220C826A90A9200604B2A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D25220CB26A90ADE00604B2A /* NetworkManager.swift */,
+				D25220C926A90AB000604B2A /* APIRequest.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D25220CD26A90B4E00604B2A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D25220CE26A90B6000604B2A /* FuelEntry.swift */,
+				D25220D226A90BD200604B2A /* FuelEntry+Extensions.swift */,
+				D25220D026A90B8100604B2A /* GeoLocation.swift */,
+				D25220D426A9138500604B2A /* GeoLocation+Extensions.swift */,
+				D2FDBB9826AA671200A897FC /* Location.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D25220D626A913F800604B2A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D25220D726A9140B00604B2A /* FuelEntryRequestManager.swift */,
+				D28F42C226ACE54D00E8D0DE /* AudioManager.swift */,
+				D25220E426A9DA6A00604B2A /* HapticsManager.swift */,
+				D2C0069426AE00D6008C8987 /* AppStoreReviewManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		D25220D926A9142700604B2A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D25220DA26A9143B00604B2A /* FuelEntryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D25220DC26A9146900604B2A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDBB9A26AA75EA00A897FC /* Reuse */,
+				D25220BB26A909F700604B2A /* MainTabView.swift */,
+				D25220E626A9DDC800604B2A /* HomeView.swift */,
+				D25220E026A9162300604B2A /* MapView.swift */,
+				D25220E226A9162C00604B2A /* ListView.swift */,
+				D2FDBB9226AA5F0200A897FC /* ListCellView.swift */,
+				D215FC1D26AA16630028FA63 /* EntryDetailView.swift */,
+				D25220E826A9E23100604B2A /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D25220DD26A9155800604B2A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D240599526AB568000A9EE14 /* DateFormat.swift */,
+				D25220DE26A9156C00604B2A /* Alerts.swift */,
+				D28F42C026ACD46D00E8D0DE /* ScaledFont.swift */,
+				D215FC1F26AA1A350028FA63 /* View+Extensions.swift */,
+				D240599126AB209100A9EE14 /* Double+Extensions.swift */,
+				D28F42A626ACA8C800E8D0DE /* String+Extensions.swift */,
+				D2C0068C26AD026F008C8987 /* UIApplication+Extensions.swift */,
+				D2C0069226AD0C89008C8987 /* Array+Extensions.swift */,
+				D2A5D5A826AEF969000DB416 /* Publisher+Extensions.swift */,
+				D2A5D5AA26AEF9AC000DB416 /* Notification+Extensions.swift */,
+				D2C0068E26AD0607008C8987 /* CloudDefaults.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D28F42AD26ACBDC700E8D0DE /* FleetioFuelTests */ = {
+			isa = PBXGroup;
+			children = (
+				D28F42BC26ACC59100E8D0DE /* NetworkTests.swift */,
+				D28F42B826ACC13C00E8D0DE /* CodableTests.swift */,
+				D28F42B626ACBEB400E8D0DE /* URLTests.swift */,
+				D28F42AE26ACBDC700E8D0DE /* FleetioFuelTests.swift */,
+				D28F42B026ACBDC700E8D0DE /* Info.plist */,
+			);
+			path = FleetioFuelTests;
+			sourceTree = "<group>";
+		};
+		D28F42C426ACE8AC00E8D0DE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D2C0068826ACF29A008C8987 /* carEngine.wav */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2FDBB8F26AA59E800A897FC /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDBB9026AA59FA00A897FC /* Constant.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D2FDBB9A26AA75EA00A897FC /* Reuse */ = {
+			isa = PBXGroup;
+			children = (
+				D240598D26AAFE9400A9EE14 /* ActivityIndicator.swift */,
+				D25220EE26A9EF1D00604B2A /* MessageView.swift */,
+				D2FDBB9626AA63B800A897FC /* MapRectangleView.swift */,
+				D2FDBB9B26AA793800A897FC /* SearchBarView.swift */,
+				D2FDBB9D26AA9C4D00A897FC /* SearchView.swift */,
+				D240598B26AAFE6800A9EE14 /* PullToRefresh.swift */,
+				D240598F26AB1BEA00A9EE14 /* CircularProgressView.swift */,
+				D240599326AB4A3000A9EE14 /* MapAnnotationImageButton.swift */,
+				D2C0068A26ACF59A008C8987 /* ErrorMessageView.swift */,
+				D2C0069026AD09C3008C8987 /* ShareSheetButton.swift */,
+				D2C0069626AE0F4E008C8987 /* SettingsSelectionButton.swift */,
+				D2D67A3A26AFA96E00B93201 /* CircleButton.swift */,
+			);
+			path = Reuse;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D25220B526A909F700604B2A /* FleetioFuel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25220C526A909F800604B2A /* Build configuration list for PBXNativeTarget "FleetioFuel" */;
+			buildPhases = (
+				D25220B226A909F700604B2A /* Sources */,
+				D25220B326A909F700604B2A /* Frameworks */,
+				D25220B426A909F700604B2A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FleetioFuel;
+			productName = FleetioFuel;
+			productReference = D25220B626A909F700604B2A /* FleetioFuel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D28F42AB26ACBDC700E8D0DE /* FleetioFuelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D28F42B326ACBDC700E8D0DE /* Build configuration list for PBXNativeTarget "FleetioFuelTests" */;
+			buildPhases = (
+				D28F42A826ACBDC700E8D0DE /* Sources */,
+				D28F42A926ACBDC700E8D0DE /* Frameworks */,
+				D28F42AA26ACBDC700E8D0DE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D28F42B226ACBDC700E8D0DE /* PBXTargetDependency */,
+			);
+			name = FleetioFuelTests;
+			productName = FleetioFuelTests;
+			productReference = D28F42AC26ACBDC700E8D0DE /* FleetioFuelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D25220AE26A909F700604B2A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					D25220B526A909F700604B2A = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					D28F42AB26ACBDC700E8D0DE = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = D25220B526A909F700604B2A;
+					};
+				};
+			};
+			buildConfigurationList = D25220B126A909F700604B2A /* Build configuration list for PBXProject "FleetioFuel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D25220AD26A909F700604B2A;
+			productRefGroup = D25220B726A909F700604B2A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D25220B526A909F700604B2A /* FleetioFuel */,
+				D28F42AB26ACBDC700E8D0DE /* FleetioFuelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D25220B426A909F700604B2A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2C0068926ACF29B008C8987 /* carEngine.wav in Resources */,
+				D25220C126A909F800604B2A /* Preview Assets.xcassets in Resources */,
+				D25220BE26A909F800604B2A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D28F42AA26ACBDC700E8D0DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D25220B226A909F700604B2A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25220D126A90B8100604B2A /* GeoLocation.swift in Sources */,
+				D2FDBB9726AA63B800A897FC /* MapRectangleView.swift in Sources */,
+				D2C0068D26AD026F008C8987 /* UIApplication+Extensions.swift in Sources */,
+				D25220E326A9162C00604B2A /* ListView.swift in Sources */,
+				D240598C26AAFE6800A9EE14 /* PullToRefresh.swift in Sources */,
+				D28F42A726ACA8C800E8D0DE /* String+Extensions.swift in Sources */,
+				D25220E526A9DA6A00604B2A /* HapticsManager.swift in Sources */,
+				D2FDBB9C26AA793800A897FC /* SearchBarView.swift in Sources */,
+				D25220E726A9DDC800604B2A /* HomeView.swift in Sources */,
+				D2C0069526AE00D6008C8987 /* AppStoreReviewManager.swift in Sources */,
+				D240599226AB209100A9EE14 /* Double+Extensions.swift in Sources */,
+				D2C0069126AD09C3008C8987 /* ShareSheetButton.swift in Sources */,
+				D25220E126A9162300604B2A /* MapView.swift in Sources */,
+				D25220EF26A9EF1D00604B2A /* MessageView.swift in Sources */,
+				D2C0068B26ACF59A008C8987 /* ErrorMessageView.swift in Sources */,
+				D215FC1E26AA16630028FA63 /* EntryDetailView.swift in Sources */,
+				D2A5D5A926AEF969000DB416 /* Publisher+Extensions.swift in Sources */,
+				D240599426AB4A3000A9EE14 /* MapAnnotationImageButton.swift in Sources */,
+				D240599026AB1BEA00A9EE14 /* CircularProgressView.swift in Sources */,
+				D2FDBB9126AA59FA00A897FC /* Constant.swift in Sources */,
+				D2C0068F26AD0607008C8987 /* CloudDefaults.swift in Sources */,
+				D28F42C126ACD46D00E8D0DE /* ScaledFont.swift in Sources */,
+				D2A5D5AB26AEF9AC000DB416 /* Notification+Extensions.swift in Sources */,
+				D2FDBB9326AA5F0200A897FC /* ListCellView.swift in Sources */,
+				D25220CC26A90ADE00604B2A /* NetworkManager.swift in Sources */,
+				D2C0069326AD0C89008C8987 /* Array+Extensions.swift in Sources */,
+				D2D67A3B26AFA96E00B93201 /* CircleButton.swift in Sources */,
+				D25220BC26A909F700604B2A /* MainTabView.swift in Sources */,
+				D25220DB26A9143B00604B2A /* FuelEntryViewModel.swift in Sources */,
+				D28F42C326ACE54D00E8D0DE /* AudioManager.swift in Sources */,
+				D25220CA26A90AB000604B2A /* APIRequest.swift in Sources */,
+				D240598E26AAFE9400A9EE14 /* ActivityIndicator.swift in Sources */,
+				D2FDBB9E26AA9C4D00A897FC /* SearchView.swift in Sources */,
+				D240599626AB568000A9EE14 /* DateFormat.swift in Sources */,
+				D2FDBB9926AA671200A897FC /* Location.swift in Sources */,
+				D215FC2026AA1A350028FA63 /* View+Extensions.swift in Sources */,
+				D25220E926A9E23100604B2A /* SettingsView.swift in Sources */,
+				D2C0069726AE0F4E008C8987 /* SettingsSelectionButton.swift in Sources */,
+				D25220BA26A909F700604B2A /* FleetioFuelApp.swift in Sources */,
+				D25220D826A9140B00604B2A /* FuelEntryRequestManager.swift in Sources */,
+				D25220D326A90BD200604B2A /* FuelEntry+Extensions.swift in Sources */,
+				D25220D526A9138500604B2A /* GeoLocation+Extensions.swift in Sources */,
+				D25220DF26A9156C00604B2A /* Alerts.swift in Sources */,
+				D25220CF26A90B6000604B2A /* FuelEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D28F42A826ACBDC700E8D0DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D28F42AF26ACBDC700E8D0DE /* FleetioFuelTests.swift in Sources */,
+				D28F42B726ACBEB400E8D0DE /* URLTests.swift in Sources */,
+				D28F42BD26ACC59100E8D0DE /* NetworkTests.swift in Sources */,
+				D28F42B926ACC13C00E8D0DE /* CodableTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D28F42B226ACBDC700E8D0DE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D25220B526A909F700604B2A /* FleetioFuel */;
+			targetProxy = D28F42B126ACBDC700E8D0DE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D25220C326A909F800604B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D25220C426A909F800604B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D25220C626A909F800604B2A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FleetioFuel/Preview Content\"";
+				DEVELOPMENT_TEAM = WN3A9M687S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FleetioFuel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FleetioFuel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		D25220C726A909F800604B2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"FleetioFuel/Preview Content\"";
+				DEVELOPMENT_TEAM = WN3A9M687S;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = FleetioFuel/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FleetioFuel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		D28F42B426ACBDC700E8D0DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FleetioFuelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FleetioFuelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FleetioFuel.app/FleetioFuel";
+			};
+			name = Debug;
+		};
+		D28F42B526ACBDC700E8D0DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FleetioFuelTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.scott.FleetioFuelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FleetioFuel.app/FleetioFuel";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D25220B126A909F700604B2A /* Build configuration list for PBXProject "FleetioFuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25220C326A909F800604B2A /* Debug */,
+				D25220C426A909F800604B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D25220C526A909F800604B2A /* Build configuration list for PBXNativeTarget "FleetioFuel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25220C626A909F800604B2A /* Debug */,
+				D25220C726A909F800604B2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D28F42B326ACBDC700E8D0DE /* Build configuration list for PBXNativeTarget "FleetioFuelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D28F42B426ACBDC700E8D0DE /* Debug */,
+				D28F42B526ACBDC700E8D0DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D25220AE26A909F700604B2A /* Project object */;
+}
