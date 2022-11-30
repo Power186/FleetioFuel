@@ -10,7 +10,7 @@
 
 ## Built with:
 * Swift
-* MVVM / MVC
+* MVVM architecture pattern
 * SwiftUI
 * UIKit
 * MapKit
